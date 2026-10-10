@@ -1,0 +1,31 @@
+name: "素材 / 提示词需求"
+description: "请求新增角色素材、提示词或创作工具支持"
+title: "[素材需求] "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "需求类型"
+      options:
+        - 表情
+        - 动作/助手状态
+        - 主题插画/服装
+        - 贴纸/表情包
+        - 提示词改进
+        - Skill/工具支持
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "需求描述"
+      description: "希望解决什么创作场景？"
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: "参考图或提示词"
+      description: "请只提供你有权分享的素材。"
